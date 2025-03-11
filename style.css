@@ -1,0 +1,94 @@
+::-webkit-scrollbar {
+  width: 1vb;
+  height: 1vb;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+  background-color: #bdbdbd;
+}
+::-webkit-scrollbar-track {
+  background-color: #f5f5f5;
+  border-radius: 4px;
+}
+
+*::selection {
+  background-color: #212121;
+  color: #fafafa;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.input {
+  box-shadow: 3px 6px 6px 0px rgba(207, 216, 220, 0.87);
+  border: 1px solid rgba(236, 240, 241, 0.87);
+  border-radius: 10px;
+  padding: 8px 10px;
+  width: 70%;
+  outline: none;
+}
+.input:focus {
+  border: 1px solid rgba(207, 216, 220, 0.87);
+}
+button:hover {
+  cursor: pointer;
+}
+button {
+  box-shadow: 3px 6px 6px 0px rgba(207, 216, 220, 0.87);
+  border: 1px solid rgba(236, 240, 241, 0.87);
+  border-radius: 10px;
+  padding: 5px 20px;
+}
+button:active {
+  border: 1px solid rgba(207, 216, 220, 0.87);
+}
+.add-box {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.todo-box {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 30px;
+}
+
+.todo {
+  display: flex;
+  width: 80%;
+  justify-content: space-between;
+  box-shadow: 3px 6px 6px 0px rgba(207, 216, 220, 0.87);
+  border: 1px solid rgba(236, 240, 241, 0.87);
+  border-radius: 10px;
+  padding: 10px;
+  align-items: center;
+  height: 40px;
+}
+.todo button {
+  height: 60%;
+  height: auto;
+}
+.title-box {
+  display: flex;
+}
+.completed {
+  text-decoration: line-through;
+}
+@media screen and (max-width: 300px) {
+  button {
+    padding: 5px 15px;
+  }
+}
+@media screen and (max-width: 230px) {
+  button {
+    padding: 5px 10px;
+  }
+}
